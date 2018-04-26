@@ -29,9 +29,17 @@ export default [{
       path: 'list',
       name: '商品信息',
       meta: {
-        
+
       },
       component: (resolve) => require(['../views/goods-list.vue'], resolve)
-    }]
+    }, {
+      path: 'acounts',
+      name: '用户测试',
+      meta: {
+
+      },
+      component: (resolve) => require(['../views/goods-list.vue'], resolve)
+
+      }]
   }]
 }];

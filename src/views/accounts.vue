@@ -32,7 +32,7 @@
       </el-table-column>
       <el-table-column label="操作" width="350" align="center">
         <template slot-scope="scope">
-          <el-button size="mini" type="info" v-has="[account.edit]">编辑</el-button>
+          <el-button size="mini" type="info" v-if="$_has([account.request])&& canReset">编辑</el-button>
           <el-button size="mini" type="success" v-has="[account.edit]">分配角色</el-button>
           <el-button size="mini" type="warning" v-has="[account.edit]">重置密码</el-button>
           <el-button size="mini" type="danger" v-has="[account.remove]">删除</el-button>

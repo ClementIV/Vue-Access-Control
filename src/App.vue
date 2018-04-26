@@ -107,6 +107,7 @@ export default {
       }
       let originPath = util.deepcopy(userPath[0].children);
       findLocalRoute(originPath);
+      console.log(allowedRouter)
       return allowedRouter;
     },
     extendRoutes: function(allowedRouter) {
@@ -184,7 +185,6 @@ export default {
               return permission = false;
             }
           });
-          //console.log(resources, permission);
           return permission;
         }
         typeof cb === 'function' && cb();

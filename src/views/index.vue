@@ -122,7 +122,7 @@
     <template v-else>
     <router-view id="main"></router-view>
     </template>
-    
+
   </div>
 </template>
 <script>
@@ -162,6 +162,7 @@ export default {
   },
   created: function() {
     let user = this.$parent.userData;
+    console.log(this.$parent)
     if (user) {
       this.user = user;
     } else {
